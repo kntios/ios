@@ -1,11 +1,11 @@
-Origin: QUYIOS
-Label: QUYIOS
+Origin: TRUNGIOS
+Label: TRUNGIOS
 Suite: stable
 Version: 1.0
 Codename: ios
 Architecture: iphoneos-arm
 Components: main
-Description: QUYIOS
+Description: TRUNGIOS
 MD5Sum:
    Packages
    Packages.bz2

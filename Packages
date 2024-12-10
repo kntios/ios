@@ -485,8 +485,8 @@ dev: dustinhowett
 Package: com.touchsprite.ios.arm64.pro.v3
 Version: 3.1.9
 Architecture: iphoneos-arm
-Maintainer: 北京帮你玩科技有限公司
-Depends: firmware (>= 11.0), com.rpetrich.actiwidget, mobilesubstrate, net.kenhtao.icleanerpro, jetslammed, com.kidsautopro.kidssupport, net.kenhtao.appdatamanager, me.autotouch.AutoTouch.ios8.inputtext, com.kidsautopro.kidsautosetting, com.ienthach.XoaInfo, com.ichitaso.powerselector11
+Maintainer: Touchsprite
+Depends:
 Replaces:
 Filename: ./Debs/com.touchsprite.ios.arm64.pro.v3_3.1.9.deb
 Size: 17390518
@@ -498,7 +498,6 @@ Description: Allows you to downgrade/upgrade apps in the AppStore on iOS 11-15.w
 Author: Touchsprite
 Depiction: https://cokepokes.github.io/depiction/appstoreplus.html
 Homepage:
-Icon: https://cokepokes.github.io/depiction/appstoreplus/icon.png
 Name: Touchsprite
 Priority: optional
 dev:

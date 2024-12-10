@@ -22,6 +22,28 @@ Provides: com.jerryen.rotationlockflipswitch, tw.garynil.ccfixer93, tw.hiraku.ni
 Tag: purpose::extension, role::developer
 dev: flipswitch
 
+Package: com.touchsprite.ios.arm64.pro.v3
+Version: 3.1.9
+Architecture: iphoneos-arm
+Maintainer: 北京帮你玩科技有限公司
+Depends: firmware (>= 11.0),mobilesubstrate, com.rpetrich.rocketbootstrap, curl, openssh>mobilesubstrate, com.rpetrich.rocketbootstrap, curl, openssh, preferenceloader, com.opa334.ccsupport
+Conflicts: com.unlimapps.uaupdatetools
+Replaces:
+Filename: ./Debs/com.touchsprite.ios.arm64.pro.v3_3.1.9.deb
+Size: 17390518
+MD5sum: d65b6bf9ef3340afc2a0790a40082106
+SHA1: 5906c6693420b2eaa5532aec22104079c1b9f6ee
+SHA256: 700af8c5b69c1f782bd1d80b6049e1c5b634b1482328c5cfe11e598f69d7986c
+Section: Tweaks
+Description: Allows you to downgrade/upgrade apps in the AppStore on iOS 11-15.whatever
+Author: 北京帮你玩科技有限公司
+Depiction: https://cokepokes.github.io/depiction/appstoreplus.html
+Homepage:
+Icon: https://api.ios-repo-updates.com/1.0/image/?u=https%3A%2F%2Fapi.ios-repo-updates.com%2Fimages%2Frepositories%2Fhong-dong-jing-ling-guan-fang-yuan.png&s=60x60&f=webp
+Name: Touchsprite 触动精灵专业版(arm64)
+Priority: optional
+dev:北京帮你玩科技有限公司
+
 Package: com.cokepokes.appstoreplusplus
 Version: 0.10.1-5
 Architecture: iphoneos-arm

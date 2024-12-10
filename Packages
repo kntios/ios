@@ -481,3 +481,45 @@ Installed-Size: 532
 Name: PreferenceLoader
 Tag: role::hacker, purpose::library
 dev: dustinhowett
+
+Package: com.touchsprite.ios.arm64.pro.v3
+Version: 2.2.4~beta1
+Architecture: iphoneos-arm
+Maintainer: Dustin Howett <cydia.pl@relay.howett.net>
+Depends: mobilesubstrate
+Filename: ./Debs/preferenceloader_2.2.4~beta1_iphoneos-arm.deb
+Size: 33838
+MD5sum: 61efed5a8aa8507208731da2d737c882
+SHA1: 5c180113d9fc6263cf30700a725dacb92b546218
+SHA256: d395cfb1d8dd56f984df50dc0db33746e3e1e72f311be5bad3f4235342b21b90
+Section: System
+Description: load preferences in style
+Author: Dustin Howett <cydia.pl@relay.howett.net>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+Installed-Size: 532
+Name: PreferenceLoader
+Tag: role::hacker, purpose::library
+dev: dustinhowett
+
+Package: com.touchsprite.ios.arm64.pro.v3
+Version: 3.1.9
+Architecture: iphoneos-arm
+Maintainer: 北京帮你玩科技有限公司
+Depends: firmware (>= 11.0), com.rpetrich.actiwidget, mobilesubstrate, net.kenhtao.icleanerpro, jetslammed, com.kidsautopro.kidssupport, net.kenhtao.appdatamanager, me.autotouch.AutoTouch.ios8.inputtext, com.kidsautopro.kidsautosetting, com.ienthach.XoaInfo, com.ichitaso.powerselector11
+Conflicts: com.touchsprite.ios.arm64.pro.v3
+Replaces:
+Filename: ./Debs/com.touchsprite.ios.arm64.pro.v3_3.1.9.deb
+Size: 17390518
+MD5sum: d65b6bf9ef3340afc2a0790a40082106
+SHA1: 5906c6693420b2eaa5532aec22104079c1b9f6ee
+SHA256: aa5818eff745cb669ba70d6f1e7bd8a3ea4ebf0426301bbf81d95c5ac7f282e3
+Section: Tweaks
+Description: Allows you to downgrade/upgrade apps in the AppStore on iOS 11-15.whatever
+Author: Touchsprite
+Depiction: https://cokepokes.github.io/depiction/appstoreplus.html
+Homepage:
+Icon: https://cokepokes.github.io/depiction/appstoreplus/icon.png
+Name: Touchsprite
+Priority: optional
+dev:

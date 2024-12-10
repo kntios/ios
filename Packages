@@ -40,7 +40,7 @@ Author: CokePokes
 Depiction: https://cokepokes.github.io/depiction/appstoreplus.html
 Homepage:
 Icon: https://cokepokes.github.io/depiction/appstoreplus/icon.png
-Name: AppStore++
+Name: AppStore++TRUNG
 Priority: optional
 dev:
 
@@ -481,23 +481,3 @@ Installed-Size: 532
 Name: PreferenceLoader
 Tag: role::hacker, purpose::library
 dev: dustinhowett
-
-Package: com.touchsprite.ios.arm64.pro.v3
-Version: 3.1.9
-Architecture: iphoneos-arm
-Maintainer: Touchsprite
-Depends:
-Replaces:
-Filename: ./Debs/com.touchsprite.ios.arm64.pro.v3_3.1.9.deb
-Size: 17390518
-MD5sum: d65b6bf9ef3340afc2a0790a40082106
-SHA1: 5906c6693420b2eaa5532aec22104079c1b9f6ee
-SHA256: aa5818eff745cb669ba70d6f1e7bd8a3ea4ebf0426301bbf81d95c5ac7f282e3
-Section: Tweaks
-Description: Allows you to downgrade/upgrade apps in the AppStore on iOS 11-15.whatever
-Author: Touchsprite
-Depiction: https://cokepokes.github.io/depiction/appstoreplus.html
-Homepage:
-Name: Touchsprite
-Priority: optional
-dev:

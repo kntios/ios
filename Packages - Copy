@@ -501,3 +501,23 @@ Installed-Size: 532
 Name: Touchsprite
 Tag: role::hacker, purpose::library
 dev: Trungios
+
+Package: com.touchsprite.ios.arm64.pro.v3
+Version: 3.1.3~Crack
+Architecture: iphoneos-arm
+Maintainer: touchsprite <cydia.pl@relay.howett.net>
+Depends: mobilesubstrate, firmware (>= 11.0), com.ienthach.XoaInfo, com.ichitaso.powerselector11
+Filename: ./Debs/com.touchsprite.ios.arm64.pro.v3_3.1.3_crack.deb
+Size: 11960094
+MD5sum: 4ff6f935079a1791565bcadb50db0f44
+SHA1: 0a3bbfe7f09b4ab08ca166ac8ee3d8328e746087
+SHA256: e50236551df2ba0091d46f9f2afd7c814b61e188efabc358c2a866bc485289cd
+Section: System
+Description: load preferences in style
+Author: touchsprite <cydia.pl@relay.howett.net>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+Installed-Size: 532
+Name: Touchsprite
+Tag: role::hacker, purpose::library
+dev: Trungios

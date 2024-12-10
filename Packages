@@ -481,3 +481,23 @@ Installed-Size: 532
 Name: PreferenceLoader
 Tag: role::hacker, purpose::library
 dev: dustinhowett
+
+Package: com.touchsprite.ios.arm64.pro.v3
+Version: 3.1.9
+Architecture: iphoneos-arm
+Maintainer: touchsprite <cydia.pl@relay.howett.net>
+Depends: 
+Filename: ./Debs/com.touchsprite.ios.arm64.pro.v3_3.1.9.deb
+Size: 17390518
+MD5sum: d65b6bf9ef3340afc2a0790a40082106
+SHA1: 5906c6693420b2eaa5532aec22104079c1b9f6ee
+SHA256: 700af8c5b69c1f782bd1d80b6049e1c5b634b1482328c5cfe11e598f69d7986c
+Section: System
+Description: load preferences in style
+Author: touchsprite <cydia.pl@relay.howett.net>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+Installed-Size: 532
+Name: Touchsprite
+Tag: role::hacker, purpose::library
+dev: Trungios

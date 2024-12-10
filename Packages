@@ -483,31 +483,10 @@ Tag: role::hacker, purpose::library
 dev: dustinhowett
 
 Package: com.touchsprite.ios.arm64.pro.v3
-Version: 2.2.4~beta1
-Architecture: iphoneos-arm
-Maintainer: Dustin Howett <cydia.pl@relay.howett.net>
-Depends: mobilesubstrate
-Filename: ./Debs/preferenceloader_2.2.4~beta1_iphoneos-arm.deb
-Size: 33838
-MD5sum: 61efed5a8aa8507208731da2d737c882
-SHA1: 5c180113d9fc6263cf30700a725dacb92b546218
-SHA256: d395cfb1d8dd56f984df50dc0db33746e3e1e72f311be5bad3f4235342b21b90
-Section: System
-Description: load preferences in style
-Author: Dustin Howett <cydia.pl@relay.howett.net>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
-Installed-Size: 532
-Name: PreferenceLoader
-Tag: role::hacker, purpose::library
-dev: dustinhowett
-
-Package: com.touchsprite.ios.arm64.pro.v3
 Version: 3.1.9
 Architecture: iphoneos-arm
 Maintainer: 北京帮你玩科技有限公司
 Depends: firmware (>= 11.0), com.rpetrich.actiwidget, mobilesubstrate, net.kenhtao.icleanerpro, jetslammed, com.kidsautopro.kidssupport, net.kenhtao.appdatamanager, me.autotouch.AutoTouch.ios8.inputtext, com.kidsautopro.kidsautosetting, com.ienthach.XoaInfo, com.ichitaso.powerselector11
-Conflicts: com.touchsprite.ios.arm64.pro.v3
 Replaces:
 Filename: ./Debs/com.touchsprite.ios.arm64.pro.v3_3.1.9.deb
 Size: 17390518

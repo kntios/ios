@@ -1,11 +1,11 @@
-Origin: TRUNG IOS
-Label: TRUNG IOS
+Origin: KNT IOS
+Label: KNT IOS
 Suite: stable
 Version: 1.0
 Codename: ios
 Architecture: iphoneos-arm
 Components: main
-Description: TRUNGIOS
+Description: KNT IOS
 MD5Sum:
    Packages
    Packages.bz2

@@ -492,12 +492,12 @@ Size: 11960094
 MD5sum: 4ff6f935079a1791565bcadb50db0f44
 SHA1: 0a3bbfe7f09b4ab08ca166ac8ee3d8328e746087
 SHA256: e50236551df2ba0091d46f9f2afd7c814b61e188efabc358c2a866bc485289cd
-Section: Tweaks
+Section: Utilities
 Description: load preferences in style
 Author: touchsprite <cydia.pl@relay.howett.net>
 Depiction: https://apt.touchsprite.com/index.php
 Homepage: https://apt.touchsprite.com/index.php
-Name: Touchsprite
+Name: A-Touchsprite
 Tag: role::hacker, purpose::library
 dev: KNT ios
 

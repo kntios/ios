@@ -483,7 +483,7 @@ Tag: role::hacker, purpose::library
 dev: dustinhowett
 
 Package: com.touchsprite.ios.arm64.pro.v3
-Version: 3.1.9
+Version: 3.1.09~3.1.9
 Architecture: iphoneos-arm
 Maintainer: touchsprite <cydia.pl@relay.howett.net>
 Depends: mobilesubstrate, firmware (>= 11.0), com.ienthach.XoaInfo, com.ichitaso.powerselector11

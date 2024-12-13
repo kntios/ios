@@ -497,6 +497,7 @@ Description: load preferences in style
 Author: touchsprite <cydia.pl@relay.howett.net>
 Depiction: https://apt.touchsprite.com/index.php
 Homepage: https://apt.touchsprite.com/index.php
+Icon: ./assets/touchsprite.png
 Name: A-Touchsprite
 Tag: role::hacker, purpose::library
 dev: KNT ios

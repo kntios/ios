@@ -497,6 +497,7 @@ Description: load preferences in style
 Author: touchsprite <cydia.pl@relay.howett.net>
 Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+Installed-Size: 532
 Name: Touchsprite
 Tag: role::hacker, purpose::library
 dev: Trungios
@@ -516,25 +517,7 @@ Description: load preferences in style
 Author: touchsprite <cydia.pl@relay.howett.net>
 Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+Installed-Size: 532
 Name: Touchsprite
-Tag: role::hacker, purpose::library
-dev: Trungios
-
-Package: com.bvnsupport.filza
-Version: 4.0.1~Crack
-Architecture: iphoneos-arm
-Maintainer: filza <cydia.pl@relay.howett.net>
-Depends: 
-Filename: ./Debs/com.bvnsupport.filza_4.0.1-2_iphoneos-arm.deb
-Size: 13940132
-MD5sum: e92fb1970fcc2efab2703e0195823ba1
-SHA1: b56eba7d10b5cfcacf7aeb9b6f1bb2c7c0f24bec
-SHA256: 56af6583e2679cbe2b84be62b86cd6d228b09d79f272ea9dcd45d2126b75b53f
-Section: Tweaks
-Description: load preferences in style
-Author: touchsprite <cydia.pl@relay.howett.net>
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
-Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
-Name: Filza VH Crack
 Tag: role::hacker, purpose::library
 dev: Trungios

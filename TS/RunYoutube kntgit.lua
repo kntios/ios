@@ -1,15 +1,17 @@
 init(0) 
 require "TSLib"
+require("tsnet")
 local ts=require("ts")
 local json=ts.json
 local cjson = ts.json
-require("tsnet")
 function httpsYTB()
-local url = "https://raw.githubusercontent.com/kieunhutrung1/ios/refs/heads/main/TS/1.lua"
-status,header,content = http.get(url,{headers=header_send,params=body_send,opts={charset="gbk"}})
-    if status_resp == 200  then 
-        local bool = writeFileString(userPath().."/lua/Youtube.lua",content,"w") 
-        if bool then
+tb = {
+    opts = {
+        save = userPath().."/lua/Youtube.lua"
+    }
+}
+status,header,content = http.get("https://kieunhutrung1.github.io/ios/TS/1.lua",tb)
+    if status == 200  then 
             require("Youtube")
             clear("/private/var/mobile/Media/TouchSprite/log")
             local statusProxy,ip,port = GetProxy()
@@ -29,7 +31,6 @@ status,header,content = http.get(url,{headers=header_send,params=body_send,opts=
                     pressHomeKey(1);
                     mSleep(1500)
             end    
-        end
     else
         openURL("XoaInfo://SetOffProxy")
         mSleep(8000)

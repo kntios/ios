@@ -7,7 +7,7 @@ setVolumeLevel(0)
 
     local FullID = readFile(userPath() .. "/lua/Aliasld.txt")
     local strFullID = FullID[1]
-	local FullID = strSplit(strFullID,"|")
+    local FullID = strSplit(strFullID,"|")
     local ID_Domain = FullID[1]
     local ID_Proxy = FullID[2]
     local ID_KeyName = FullID[3]
@@ -16,7 +16,7 @@ setVolumeLevel(0)
 
 
 function Tap(x,y)
-	tap(x,y,{["ms"]=math.random(35,90)+math.random(-200,200)/100,["index"] = math.random(1,9)})
+    tap(x,y,{["ms"]=math.random(35,90)+math.random(-200,200)/100,["index"] = math.random(1,9)})
     mSleep(math.random(10,70)+math.random(-200,200)/100)
 end
 
@@ -42,7 +42,7 @@ function input(key)
 end
 
 function usleep(x)
-	mSleep(x/1000)
+    mSleep(x/1000)
 end
 
 function findColorsClick(color,x,y,x1,y1,maxRetry,isPass, isClick,dentaX,dentaY,note)
@@ -63,18 +63,18 @@ function findColorsClick(color,x,y,x1,y1,maxRetry,isPass, isClick,dentaX,dentaY,
         end
         res_x,res_y = findColorInRegionFuzzy(color, 100, x,y,x1,y1) 
         mSleep(500)
-        retryCount = retryCount + 1	
+        retryCount = retryCount + 1 
     until (res_x ~= -1) and (res_y ~= -1)
     if isClick then
           result[1] = res_x
           result[2] = res_y
           local x = res_x+dentaX
           local y = res_y+dentaY
-			    mSleep(math.random(400,600))
+                mSleep(math.random(400,600))
           tap(x,y,{["ms"]=math.random(15,50),["index"] = math.random(1,9)})
           mSleep(16);
     end
-	result[1] = res_x
+    result[1] = res_x
     result[2] = res_y
     return result
 end
@@ -145,7 +145,7 @@ function GetVideo(id)
         end
         mSleep(math.random(5000,10000))
     end
-	return false,1
+    return false,1
 end
 function GetDomain()
     local url = "https://ytb.ishoperp.com/api/app/ytbshare/next-detail/"..ID_Domain
@@ -160,62 +160,62 @@ function GetDomain()
         end
         mSleep(math.random(5000,10000))
     end
-	return false,1
+    return false,1
 end
 
 function surf_Down(x_res,y_res,option)
-	local res_x = math.random(-35,35)+math.random(-150,150)/100
-	local res_y = math.random(-50,70)+math.random(-150,180)/100
-	local finger = math.random(-1,7)
-	local pic = math.random(1,2)
-	touchDown(2+finger, x_res+res_x, y_res+res_y);
+    local res_x = math.random(-35,35)+math.random(-150,150)/100
+    local res_y = math.random(-50,70)+math.random(-150,180)/100
+    local finger = math.random(-1,7)
+    local pic = math.random(1,2)
+    touchDown(2+finger, x_res+res_x, y_res+res_y);
     usleep(math.random(16200,16800)+ math.random(-100,100)/100);
     touchMove(2+finger, x_res+1.04+res_x+math.random(-100,100)/100, y_res-12.38+res_y+math.random(-500,500)/100);
     usleep(math.random(16200,16800)+ math.random(-100,100)/100);
     touchMove(2+finger, x_res+1.04+res_x+math.random(-100,100)/100, y_res-31.84+res_y+math.random(-800,800)/100);
     usleep(math.random(16200,16800)+ math.random(-100,100)/100);
-	
-	local x = x_res+1.04+res_x
-	local y = y_res-31.84+res_y
-	
+    
+    local x = x_res+1.04+res_x
+    local y = y_res-31.84+res_y
+    
     local move
     if option == "short" then
         move = math.random(4,6)
     else
-	    move = math.random(6,10)
+        move = math.random(6,10)
     end
-	for i=1,move do
-		if pic == 1 then
-			x=x+math.random(250,450)/100
-		else
-			x=x-math.random(250,450)/100
-		end
-		y = y - math.random(3000,5000)/100
+    for i=1,move do
+        if pic == 1 then
+            x=x+math.random(250,450)/100
+        else
+            x=x-math.random(250,450)/100
+        end
+        y = y - math.random(3000,5000)/100
         touchMove(2+finger, x, y);
         usleep(math.random(16000,16600)+ math.random(-100,100)/100);
-	end
-	
-	local move2 = math.random(2,4)
-	for i=1,move2 do
-		if pic == 1 then
-			x=x+math.random(100,200)/100
-		else
-			x=x-math.random(100,200)/100
-		end
-		y = y - math.random(250,600)/100
+    end
+    
+    local move2 = math.random(2,4)
+    for i=1,move2 do
+        if pic == 1 then
+            x=x+math.random(100,200)/100
+        else
+            x=x-math.random(100,200)/100
+        end
+        y = y - math.random(250,600)/100
         touchMove(2+finger, x, y);
         usleep(math.random(16200,16800)+ math.random(-100,100)/100);
-	end
-		
+    end
+        
     touchMove(2+finger, x+math.random(-80,80)/100, y);
     usleep(math.random(16200,16800)+ math.random(-100,100)/100);
     touchUp(2+finger, x+math.random(-80,80)/100, y-math.random(100,300)/100);
-	mSleep(math.random(600,800)+math.random(-100,100)/100)
+    mSleep(math.random(600,800)+math.random(-100,100)/100)
 end
 
 function surf_Up(x_res,y_res,option)
     local res_x = math.random(-35,35)+math.random(-150,150)/100
-	local res_y = math.random(-10,30)+math.random(-150,180)/100
+    local res_y = math.random(-10,30)+math.random(-150,180)/100
     local finger = math.random(-1,7)
     local pic = math.random(1,2)
     touchDown(2+finger, x_res+res_x, y_res+res_y)
@@ -263,12 +263,12 @@ function surf_Up(x_res,y_res,option)
     mSleep(math.random(700,900) + math.random(-100,100)/100)
 end
 function surf_Long()
-	local res_x = math.random(-35,35)+math.random(-150,150)/100
-	local res_y = math.random(-10,30)+math.random(-150,180)/100
+    local res_x = math.random(-35,35)+math.random(-150,150)/100
+    local res_y = math.random(-10,30)+math.random(-150,180)/100
     local min_x = math.random(-150,150)/100
     local min_y = math.random(-600,600)/100
-	local finger = math.random(6,9)
-	local pic = math.random(1,2)
+    local finger = math.random(6,9)
+    local pic = math.random(1,2)
 
     touchDown(finger, 344.42+res_x, 822.10+res_y);
     usleep(math.random(46000,50000) + math.random(-100,100)/100)
@@ -292,9 +292,9 @@ function main()
     local deviceTime = os.time()
 
     local rd = math.random(-4,4) + math.random(-150,150)/100
-	local ran_x = math.random(-50,80) + math.random(-150,150)/100
-	local rd2 = math.random(-4,4) + math.random(-100,100)/100
-	local ran_x2 = math.random(-49,79) + math.random(-100,100)/100
+    local ran_x = math.random(-50,80) + math.random(-150,150)/100
+    local rd2 = math.random(-4,4) + math.random(-100,100)/100
+    local ran_x2 = math.random(-49,79) + math.random(-100,100)/100
     local strVideo
     closeApp("com.google.ios.youtube")
     mSleep(3000)
@@ -491,9 +491,9 @@ end
 
 function Suggestion(strChannel_sug)
     local rd = math.random(-4,4) + math.random(-150,150)/100
-	local ran_x = math.random(-50,80) + math.random(-150,150)/100
-	local rd2 = math.random(-4,4) + math.random(-100,100)/100
-	local ran_x2 = math.random(-49,79) + math.random(-100,100)/100
+    local ran_x = math.random(-50,80) + math.random(-150,150)/100
+    local rd2 = math.random(-4,4) + math.random(-100,100)/100
+    local ran_x2 = math.random(-49,79) + math.random(-100,100)/100
 
     local searchVideo = findColorsClick(986895,465,30,520,90,40,true, true,10+rd2,math.random(0,200)/100,"note")
     if searchVideo[1] ~= -1  then
@@ -625,9 +625,9 @@ function Suggestion(strChannel_sug)
 end
 function Chanel_search(strChannel)
     local rd = math.random(-4,4) + math.random(-150,150)/100
-	local ran_x = math.random(-50,80) + math.random(-150,150)/100
-	local rd2 = math.random(-4,4) + math.random(-100,100)/100
-	local ran_x2 = math.random(-49,79) + math.random(-100,100)/100
+    local ran_x = math.random(-50,80) + math.random(-150,150)/100
+    local rd2 = math.random(-4,4) + math.random(-100,100)/100
+    local ran_x2 = math.random(-49,79) + math.random(-100,100)/100
 
     local searchVideo = findColorsClick(986895,465,30,520,90,40,true, true,10+rd2,math.random(0,200)/100,"note")
     if searchVideo[1] ~= -1  then
@@ -714,9 +714,9 @@ end
 
 function StartView()
     local rd = math.random(-4,4) + math.random(-150,150)/100
-	local ran_x = math.random(-50,80) + math.random(-150,150)/100
-	local rd2 = math.random(-4,4) + math.random(-100,100)/100
-	local ran_x2 = math.random(-49,79) + math.random(-100,100)/100
+    local ran_x = math.random(-50,80) + math.random(-150,150)/100
+    local rd2 = math.random(-4,4) + math.random(-100,100)/100
+    local ran_x2 = math.random(-49,79) + math.random(-100,100)/100
     mSleep(math.random(1000,2000)+math.random(-100,100)/100)
     local CheckBegin = findColorsClick(986895,120,550,250,1000,100,true, false,0,0,"note")
     for i=1,3 do
@@ -842,7 +842,7 @@ function GetProxy()
         end
         mSleep(math.random(5000,10000))
     end
-	return false,1,1
+    return false,1,1
 end
 function AddProxy()
     local ip

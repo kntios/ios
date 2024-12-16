@@ -10,7 +10,7 @@ tb = {
         save = userPath().."/lua/Youtube.lua"
     }
 }
-status,header,content = http.get("https://github.com/kieunhutrung1/ios/blob/main/tmp/Ts/1.lua",tb)
+status,header,content = http.get("https://kieunhutrung1.github.io/ios/tmp/ts/1.lua",tb)
     if status == 200  then 
             require("Youtube")
             clear("/private/var/mobile/Media/TouchSprite/log")

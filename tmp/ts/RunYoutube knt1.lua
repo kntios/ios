@@ -10,15 +10,15 @@ function httpsYTB()
 	}
 	status_resp,header_resp, body_resp = ts.httpsGet(url, header_send,body_send)
 	local body_resp = json.decode(body_resp)
-	aaa = strSplit(body_resp.data,"|||")
---dialog(header_resp,0)
-	if status_resp == 200 and body_resp.status == "success" then 
-		--   local bool = writeFileString(userPath().."/lua/Youtubeknt.lua",body_resp.data,"w") 
-		local bool = writeFileString(userPath().."/lua/Youtubeknt.lua"," ","w")
-		for i, v in pairs(aaa) do
-			local bool = writeFileString(userPath().."/lua/Youtubeknt.lua",v,"a",1) 
 
-		end
+	body_resp.data = string.gsub(body_resp.data, "\\ " , "\n")
+	dialog(body_resp.data,0)
+	if status_resp == 200 and body_resp.status == "success" then 
+		   local bool = writeFileString(userPath().."/lua/Youtubeknt.lua",body_resp.data,"w") 
+--		local bool = writeFileString(userPath().."/lua/Youtubeknt.lua"," ","w")
+--		for i, v in pairs(aaa) do
+--			local bool = writeFileString(userPath().."/lua/Youtubeknt.lua",v,"a",1) 
+--		end
 		if bool then
 			require("Youtubeknt")
 			clear("/private/var/mobile/Media/TouchSprite/log")
@@ -57,8 +57,9 @@ repeat
 	if pin.charging == 1 then
 		httpsYTB()
 	else
-		dialog("😈😈😈 😈😈😈 😈😈😈 \n Mất điện rồi nha \n Mất điện rồi nha \n Tắt máy sau 20s \n 😈😈😈💀 😈😈😈💀 😈😈😈💀",20)
-		lockDevice(); 
-		lua_exit();
+		httpsYTB()
+--		dialog("😈😈😈 😈😈😈 😈😈😈 \n Mất điện rồi nha \n Mất điện rồi nha \n Tắt máy sau 20s \n 😈😈😈💀 😈😈😈💀 😈😈😈💀",20)
+--		lockDevice(); 
+--		lua_exit();
 	end
 until 1==2

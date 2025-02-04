@@ -33,3 +33,4 @@ sudo /usr/local/bin/palera1n -c -f -v
 sudo /usr/local/bin/palera1n -f -v
 ```
 TrollInstallerX [Bấm vào đây để tải TrollInstallerX](https://kieunhutrung1.github.io/ios/tmp/TrollInstallerX/TrollInstallerX.zip)
+ESign [ESign-AVEX DIGITAL INC](https://api.khoindvn.eu.org/0qvzM4)

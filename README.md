@@ -34,12 +34,14 @@ sudo /usr/local/bin/palera1n -f -v
 ```
 TrollInstallerX [Bấm vào đây để tải TrollInstallerX](https://kieunhutrung1.github.io/ios/tmp/TrollInstallerX/TrollInstallerX.zip)
 
+Install DNS Profile [DNS Profile]([https://api.khoindvn.eu.org/0qvzM4](https://khoindvn.io.vn/document/DNS/khoindns.mobileconfig?sign=1))
+
 ESign [ESign-AVEX DIGITAL INC](https://api.khoindvn.eu.org/0qvzM4)
 
 ESign [ESign-China Continent Property & Casualty Insurance Company Ltd.](https://api.khoindvn.eu.org/8QDvZW)
 
 ESign [ESign-Zhuhaishi ShijiXintong Network Technology Co., Ltd.](https://api.khoindvn.eu.org/Zc05zL)
 
-ESign [ESign-AVEX DIGITAL INC](https://api.khoindvn.eu.org/0qvzM4)
+Install DNS Profile [DNS Profile]([https://api.khoindvn.eu.org/0qvzM4](https://khoindvn.io.vn/document/DNS/khoindns.mobileconfig?sign=1))
 
 ESign [ESign-AVEX DIGITAL INC](https://api.khoindvn.eu.org/0qvzM4)

@@ -52,9 +52,26 @@
     var adfly_id = 10554431; 
 </script> 
 <script src="http://cdn.adf.ly/js/display.js"></script> 
-<block>
-	<p>kieunhutrung6@gmail.com|Zxcv123123</p>
-</block>
+
+<input type="text" value="kieunhutrung6@gmail.com|Zxcv123123" id="myInput">
+<button onclick="myFunction()">Copy text</button>
+
+<script>
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Alert the copied text
+}
+</script>
+
 
 <fieldset>
 	<a href="mailto:cateli2005@gmail.com"><img src="http://cydia.saurik.com/ui/ios/1.1/package/email.png" class="icon"><div><div><label><p>Email Repo Manager</p></label></div></div></a>

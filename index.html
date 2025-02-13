@@ -24,8 +24,10 @@
 	
 <block>
 	<p>YOU'RE NOT CYDIA!</p>
-	<input type="text" value="kieunhutrung6@gmail.com|Zxcv123123" id="myInput">
-	<button onclick="myFunction()">Copy text</button>
+<input id="foo" value="kieunhutrung6@gmail.com|Zxcv123123">
+<button class="btn" data-clipboard-target=#foo> Coppy</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.6.1/clipboard.min.js"></script>
+<script type="text/javascript">
 </block>
 
 <fieldset>
@@ -53,35 +55,6 @@
     var adfly_id = 10554431; 
 </script> 
 <script src="http://cdn.adf.ly/js/display.js"></script> 
-
-
-<script>
-function myFunction() {
-  // Get the text field
-  var copyText = document.getElementById("myInput");
-
-  // Select the text field
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); // For mobile devices
-
-  // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText.value);
-  
-  // Alert the copied text
-}
-</script>
-
-<script src="assets/clipboard.min.js"></script>
-
-<!-- Target -->
-<input id="foo" value="https://github.com/zenorocha/clipboard.js.git">
-
-<!-- Trigger -->
-<button class="btn" data-clipboard-target="#foo">
-    <img src="assets/clippy.svg" alt="Copy to clipboard">
-</button>
-
-
 
 <fieldset>
 	<a href="mailto:cateli2005@gmail.com"><img src="http://cydia.saurik.com/ui/ios/1.1/package/email.png" class="icon"><div><div><label><p>Email Repo Manager</p></label></div></div></a>

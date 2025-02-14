@@ -74,11 +74,20 @@ new Clipboard('.btn');
 </script> 
 <script src="http://cdn.adf.ly/js/display.js"></script> 
 
-<script>
+<script    <script>
         function accessURL() {
             const inputData = document.getElementById("inputData").value; // Lấy giá trị từ input
-            const baseURL = "https://script.google.com/macros/s/AKfycbwOU0215GtOEqz8D0bCVDR9yhSRrWo7k-xHOXHWiNU4XBRKFIjeAu-gKKkIdPiLET7ahw/exec?field_1=123&field_2="; // URL cơ bản
-            const fullURL = baseURL + encodeURIComponent(inputData); // Gép với giá trị và mã hóa
+            const baseURL = "https://script.google.com/macros/s/AKfycbwOU0215GtOEqz8D0bCVDR9yhSRrWo7k-xHOXHWiNU4XBRKFIjeAu-gKKkIdPiLET7ahw/exec?field_1="; // URL cơ bản
+            let selectedData = [];
+
+            // Lấy giá trị từ các checkbox
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            checkboxes.forEach((checkbox) => {
+                selectedData.push(checkbox.value); // Thêm giá trị của checkbox đã chọn vào mảng
+            });
+
+            // Ghép cả giá trị vào URL với "hoanganh" ở giữa
+            const fullURL = baseURL + encodeURIComponent(inputData) + "&field_2=" + encodeURIComponent(selectedData.join(','));
             
             window.location.href = fullURL; // Truy cập vào URL
         }
@@ -87,6 +96,14 @@ new Clipboard('.btn');
 <body>
     <h1>Tạo và Truy cập URL từ Input</h1>
     <input type="text" id="inputData" placeholder="Nhập dữ liệu của bạn" />
+
+    <fieldset>
+        <legend>Chọn dữ liệu sẵn:</legend>
+        <label><input type="checkbox" value="data1" checked> 100</label><br> <!-- Mặc định chọn -->
+        <label><input type="checkbox" value="data2"> 500</label><br>
+        <label><input type="checkbox" value="data3"> 1000</label><br>
+    </fieldset>
+
     <button onclick="accessURL()">Truy cập URL ngay</button>
 </body>
 

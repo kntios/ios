@@ -74,6 +74,21 @@ new Clipboard('.btn');
 </script> 
 <script src="http://cdn.adf.ly/js/display.js"></script> 
 
+<script>
+        function accessURL() {
+            const inputData = document.getElementById("inputData").value; // Lấy giá trị từ input
+            const baseURL = "https://script.google.com/macros/s/AKfycbwOU0215GtOEqz8D0bCVDR9yhSRrWo7k-xHOXHWiNU4XBRKFIjeAu-gKKkIdPiLET7ahw/exec?field_1=123&field_2="; // URL cơ bản
+            const fullURL = baseURL + encodeURIComponent(inputData); // Gép với giá trị và mã hóa
+            
+            window.location.href = fullURL; // Truy cập vào URL
+        }
+    </script>
+</head>
+<body>
+    <h1>Tạo và Truy cập URL từ Input</h1>
+    <input type="text" id="inputData" placeholder="Nhập dữ liệu của bạn" />
+    <button onclick="accessURL()">Truy cập URL ngay</button>
+</body>
 
 <fieldset>
 	<a href="mailto:cateli2005@gmail.com"><img src="http://cydia.saurik.com/ui/ios/1.1/package/email.png" class="icon"><div><div><label><p>Email Repo Manager</p></label></div></div></a>

@@ -66,7 +66,7 @@ new Clipboard('.btn');
     <script>
         function accessURL() {
             const inputData = document.getElementById("inputData").value; // Lấy giá trị từ input
-            const baseURL = "https://script.google.com/macros/s/AKfycbwOU0215GtOEqz8D0bCVDR9yhSRrWo7k-xHOXHWiNU4XBRKFIjeAu-gKKkIdPiLET7ahw/exec?field_1="; // URL cơ bản
+            const baseURL = "https://script.google.com/macros/s/AKfycbwOU0215GtOEqz8D0bCVDR9yhSRrWo7k-xHOXHWiNU4XBRKFIjeAu-gKKkIdPiLET7ahw/exec?"; // URL cơ bản
             let selectedData = "";
             
             // Lấy giá trị từ radio button được chọn (chỉ có một)
@@ -76,7 +76,7 @@ new Clipboard('.btn');
             }
 
             // Ghép cả giá trị vào URL với "hoanganh" ở giữa
-            const fullURL = baseURL + encodeURIComponent(inputData) + "&field_2=" + encodeURIComponent(selectedData);
+            const fullURL = baseURL + encodeURIComponent(selectedData) +'='+ encodeURIComponent(inputData);
             
             // Gửi yêu cầu mà không chuyển hướng
             fetch(fullURL)
@@ -100,9 +100,10 @@ new Clipboard('.btn');
     <input type="text" id="inputData" placeholder="Nhập Link Girl muốn lưu" />
 				<button onclick="accessURL()">Save data</button>
     <fieldset>
-        <label><input type="radio" name="data" value="100" checked> Gift 100</label><br> <!-- Mặc định chọn -->
-        <label><input type="radio" name="data" value="500"> Gift 500 </label><br>
-        <label><input type="radio" name="data" value="1000"> Gift 1000</label><br>
+        <label><input type="radio" name="data" value="gift_100" checked> Gift 100</label><br> <!-- Mặc định chọn -->
+        <label><input type="radio" name="data" value="gift_500"> Gift 500 </label><br>
+        <label><input type="radio" name="data" value="gift_1000"> Gift 1000</label><br>
+        <label><input type="radio" name="data" value="check_loi"> Check lại Link này</label><br>
     </fieldset>
 
     

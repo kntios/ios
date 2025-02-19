@@ -170,6 +170,34 @@ new Clipboard('.btn');
   <img src="./icon/wf.png" alt="Trulli" style="width:70%">
 </figure>
 </block>
+<body>
+    <h1>Ẩn và Hiện Ảnh Sử Dụng Figure</h1>
+    
+    <!-- Nút để ẩn/hiện hình ảnh -->
+    <button id="toggleButton">Hiện Ảnh</button>
+
+    <!-- Sử dụng <figure> để nhóm hình ảnh và chú thích -->
+    <figure id="imageWrapper">
+        <img id="myImage" src="./icon/wf.png" alt="Ảnh Người Phụ Nữ">
+        <figcaption>Người phụ nữ trong hình ảnh này.</figcaption>
+    </figure>
+
+    <script>
+        // Lấy phần tử nút và hình ảnh
+        const button = document.getElementById('toggleButton');
+        const image = document.getElementById('myImage');
+
+        // Hàm để ẩn/hiện hình ảnh
+        button.onclick = function() {
+            if (image.style.display === 'none') {
+                image.style.display = 'block'; // Hiện ảnh nếu đang ẩn
+                button.textContent = 'Ẩn Ảnh'; // Thay đổi văn bản của nút
+            } else {
+                image.style.display = 'none'; // Ẩn ảnh nếu đang hiện
+                button.textContent = 'Hiện Ảnh'; // Thay đổi văn bản của nút
+            }
+        };
+    </script>
 </panel>
 </body>
 </html>

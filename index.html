@@ -173,7 +173,6 @@ new Clipboard('.btn');
     <!-- Sử dụng <figure> để nhóm hình ảnh và chú thích -->
     <figure id="imageWrapper">
         <img id="myImage" src="./icon/wf.png" alt="Trulli" style="width:70%">
-        <figcaption>QR wifi tại đây.</figcaption>
     </figure>
 
     <script>
@@ -185,10 +184,10 @@ new Clipboard('.btn');
         button.onclick = function() {
             if (image.style.display === 'none') {
                 image.style.display = 'block'; // Hiện ảnh nếu đang ẩn
-                button.textContent = 'Ẩn Ảnh'; // Thay đổi văn bản của nút
+                button.textContent = 'Ẩn QR Wifi '; // Thay đổi văn bản của nút
             } else {
                 image.style.display = 'none'; // Ẩn ảnh nếu đang hiện
-                button.textContent = 'Hiện Ảnh'; // Thay đổi văn bản của nút
+                button.textContent = 'Hiện thị QR Wifi '; // Thay đổi văn bản của nút
             }
         };
     </script>

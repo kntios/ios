@@ -30,7 +30,7 @@ rootfull
 sudo /usr/local/bin/palera1n -c -f -v
 ```
 ```bash
-sudo /usr/local/bin/palera1n -f -b -v
+sudo /usr/local/bin/palera1n -f -B -v
 ```
 ```bash
 sudo /usr/local/bin/palera1n -f -v

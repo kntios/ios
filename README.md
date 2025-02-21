@@ -6,7 +6,7 @@ cateli2005@gmail.com
 ![image](https://github.com/user-attachments/assets/583e979e-dd1b-4495-9ab0-3aa05d220fb6)
 
 Palera1n [Bấm vào đây để tải Palera1n](https://github.com/palera1n/palera1n/releases/)
-
+Palera1n [Bấm vào đây để tải Palera1n v2.0.0 beta 9]([https://github.com/palera1n/palera1n/releases/](https://github.com/palera1n/palera1n/releases/tag/v2.0.0-beta.9/)
 Tải bản palera1n-macos-universal
 
 File tải về sẽ nằm trong thư mục Downloads

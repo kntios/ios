@@ -30,6 +30,9 @@ rootfull
 sudo /usr/local/bin/palera1n -c -f -v
 ```
 ```bash
+sudo /usr/local/bin/palera1n -f -b -v
+```
+```bash
 sudo /usr/local/bin/palera1n -f -v
 ```
 TrollInstallerX [Bấm vào đây để tải TrollInstallerX](https://kieunhutrung1.github.io/ios/tmp/TrollInstallerX/TrollInstallerX.zip)

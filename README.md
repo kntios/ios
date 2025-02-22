@@ -7,6 +7,7 @@ cateli2005@gmail.com
 
 Palera1n [Bấm vào đây để tải Palera1n](https://github.com/palera1n/palera1n/releases/)
 
+Palera1n [Bấm vào đây để tải Palera1n v2.0.0 beta 9](https://github.com/palera1n/palera1n/releases/tag/v2.0.0-beta.9/)
 Tải bản palera1n-macos-universal
 
 File tải về sẽ nằm trong thư mục Downloads
@@ -28,6 +29,9 @@ sudo chmod +x /usr/local/bin/palera1n
 rootfull
 ```bash
 sudo /usr/local/bin/palera1n -c -f -v
+```
+```bash
+sudo /usr/local/bin/palera1n -f -B -v
 ```
 ```bash
 sudo /usr/local/bin/palera1n -f -v
